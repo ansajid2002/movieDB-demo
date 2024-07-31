@@ -1,0 +1,31 @@
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.movie-card {
+  margin: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.movie-item {
+  height: 500px; /* Set a fixed height for the movie image container */
+}
+
+.movie-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+@media (min-width: 1000px) {
+  .movie-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .movie-item {
+    height: 200px; /* Set a fixed height for the movie image container */
+  }
+  
+}
